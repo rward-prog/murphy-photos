@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Murphy Photo Bank</title>
+<style>
+:root{--ink:#1b2a41;--snow:#e4eef8;--paper:#fffdf8;--leash:#f2557d;--bone:#ffc93c;--grass:#3fae6a;--sky:#3d8bd9;--muted:#5b6b82}
+@media (prefers-color-scheme:dark){:root{--ink:#f1f5fb;--snow:#14202f;--paper:#1d2b3e;--muted:#9fb0c7}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--snow);color:var(--ink);font-family:ui-rounded,"Trebuchet MS","Segoe UI",system-ui,sans-serif;line-height:1.5}
+header{padding:2.5rem 1.25rem 1rem;max-width:1100px;margin:0 auto}
+h1{margin:0;font-size:clamp(2.2rem,7vw,4rem);letter-spacing:-.02em;line-height:1}
+h1 span:nth-child(1){color:var(--leash)}h1 span:nth-child(2){color:var(--bone)}h1 span:nth-child(3){color:var(--grass)}h1 span:nth-child(4){color:var(--sky)}
+header p{margin:.5rem 0 0;color:var(--muted);max-width:60ch}
+code{background:var(--paper);padding:.1em .4em;border-radius:6px;font-size:.9em}
+#chips{display:flex;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:1rem auto;padding:0 1.25rem}
+#chips button{font:inherit;border:2px solid var(--ink);background:var(--paper);color:var(--ink);padding:.3rem .85rem;border-radius:999px;cursor:pointer}
+#chips button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+#chips button:focus-visible,.card:focus-visible,dialog button:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+main{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1.25rem;max-width:1100px;margin:0 auto;padding:1rem 1.25rem 3rem}
+.card{background:var(--paper);border:0;padding:.6rem .6rem 0;border-radius:6px;box-shadow:0 2px 0 rgba(0,0,0,.12);cursor:pointer;text-align:left;font:inherit;color:inherit;transition:transform .15s}
+.card:hover{transform:rotate(-1.5deg) scale(1.03)}
+.card img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:3px}
+.card b{display:block;padding:.6rem .25rem .2rem;font-weight:600;font-size:.95rem}
+.card small{display:block;padding:0 .25rem .7rem;color:var(--muted)}
+dialog{border:0;border-radius:10px;padding:0;max-width:min(92vw,620px);background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(10,20,35,.7)}
+dialog img{display:block;width:100%;max-height:70vh;object-fit:contain;background:#000}
+dialog div{padding:1rem 1.25rem}
+dialog button{font:inherit;border:2px solid var(--ink);background:none;color:var(--ink);padding:.3rem .9rem;border-radius:999px;cursor:pointer;margin-top:.5rem}
+@media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<header>
+<h1><span>Murphy</span> <span>Photo</span> <span>Bank</span></h1>
+<p><span id="count">…</span> photos. Add <code>&lt;img data-murphy="happy"&gt;</code> to any project and a matching Murphy shows up.</p>
+</header>
+<div id="chips" role="group" aria-label="Filter by tag"></div>
+<main id="grid"></main>
+<dialog id="dlg"><img id="big" alt=""><div><b id="cap"></b><p id="meta"></p><button id="close">Close</button></div></dialog>
+<script src="murphy.js"></script>
+<script>
+(function(){
+var grid=document.getElementById('grid'),chips=document.getElementById('chips'),dlg=document.getElementById('dlg'),active='all',photos=[];
+function show(){
+  grid.innerHTML='';
+  photos.filter(function(p){return active==='all'||p.tags.indexOf(active)>-1}).forEach(function(p){
+    var b=document.createElement('button');b.className='card';
+    var i=document.createElement('img');i.src=p.url;i.alt=p.caption;i.loading='lazy';
+    var c=document.createElement('b');c.textContent=p.caption;
+    var s=document.createElement('small');s.textContent=p.mood.join(', ');
+    b.append(i,c,s);
+    b.onclick=function(){document.getElementById('big').src=p.url;document.getElementById('cap').textContent=p.caption;
+      document.getElementById('meta').textContent=[p.pose,p.setting,p.props,p.age].filter(Boolean).join(' · ')+'  |  tags: '+p.tags.join(', ');dlg.showModal();};
+    grid.appendChild(b);
+  });
+}
+function chip(t){var b=document.createElement('button');b.textContent=t;b.setAttribute('aria-pressed',t===active);
+  b.onclick=function(){active=t;[].forEach.call(chips.children,function(x){x.setAttribute('aria-pressed',x.textContent===t)});show();};chips.appendChild(b);}
+document.getElementById('close').onclick=function(){dlg.close()};
+dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()});
+Murphy.all().then(function(a){photos=a;document.getElementById('count').textContent=a.length;
+  chip('all');return Murphy.tags()}).then(function(t){t.forEach(chip);show();});
+})();
+</script>
+</body>
+</html>
