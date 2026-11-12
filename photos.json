@@ -1,0 +1,408 @@
+{
+  "updated": "2026-11-12",
+  "moodGroups": {
+    "right": [
+      "happy",
+      "proud",
+      "excited",
+      "silly"
+    ],
+    "wrong": [
+      "sad",
+      "worried",
+      "confused",
+      "hopeful"
+    ]
+  },
+  "photos": [
+    {
+      "file": "murphy-00-underbite.jpg",
+      "caption": "I have notes about your answer.",
+      "tags": [
+        "adult",
+        "cardboard box",
+        "grumpy",
+        "indoors",
+        "judgy",
+        "silly"
+      ],
+      "mood": [
+        "silly",
+        "grumpy",
+        "judgy"
+      ],
+      "pose": "front closeup, underbite showing",
+      "setting": "indoors",
+      "props": "cardboard box",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-01-rainbow-bone.jpg",
+      "caption": "Correct! Here, have a bone.",
+      "tags": [
+        "adult",
+        "excited",
+        "happy",
+        "indoors",
+        "proud",
+        "rainbow bone toy"
+      ],
+      "mood": [
+        "happy",
+        "proud",
+        "excited"
+      ],
+      "pose": "holding toy in mouth",
+      "setting": "indoors",
+      "props": "rainbow bone toy",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-02-paws-up.jpg",
+      "caption": "High five!",
+      "tags": [
+        "excited",
+        "happy",
+        "indoors",
+        "puppy",
+        "silly"
+      ],
+      "mood": [
+        "happy",
+        "excited",
+        "silly"
+      ],
+      "pose": "paw raised, mouth open",
+      "setting": "indoors",
+      "props": "",
+      "age": "puppy"
+    },
+    {
+      "file": "murphy-03-snow-boy.jpg",
+      "caption": "Snow problem.",
+      "tags": [
+        "adult",
+        "cozy",
+        "curious",
+        "happy",
+        "snow",
+        "snow on nose"
+      ],
+      "mood": [
+        "curious",
+        "happy",
+        "cozy"
+      ],
+      "pose": "sitting, looking at camera",
+      "setting": "snow",
+      "props": "snow on nose",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-04-nose-closeup.jpg",
+      "caption": "Nose-y? Yes.",
+      "tags": [
+        "adult",
+        "curious",
+        "indoors",
+        "silly",
+        "sleepy"
+      ],
+      "mood": [
+        "silly",
+        "sleepy",
+        "curious"
+      ],
+      "pose": "extreme nose closeup",
+      "setting": "indoors",
+      "props": "",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-05-standing-in-snow.jpg",
+      "caption": "Is that the answer? I'm not so sure.",
+      "tags": [
+        "confused",
+        "curious",
+        "puppy",
+        "snow",
+        "worried"
+      ],
+      "mood": [
+        "confused",
+        "curious",
+        "worried"
+      ],
+      "pose": "standing, looking at camera",
+      "setting": "snow",
+      "props": "",
+      "age": "puppy"
+    },
+    {
+      "file": "murphy-08-side-eye.jpg",
+      "caption": "Side-eyeing your homework.",
+      "tags": [
+        "confused",
+        "grumpy",
+        "judgy",
+        "puppy",
+        "snow",
+        "snowy whiskers"
+      ],
+      "mood": [
+        "judgy",
+        "grumpy",
+        "confused"
+      ],
+      "pose": "side eye closeup",
+      "setting": "snow",
+      "props": "snowy whiskers",
+      "age": "puppy"
+    },
+    {
+      "file": "murphy-09-puppy-face.jpg",
+      "caption": "Please say I got it right.",
+      "tags": [
+        "curious",
+        "hopeful",
+        "indoors",
+        "puppy",
+        "sweet"
+      ],
+      "mood": [
+        "curious",
+        "hopeful",
+        "sweet"
+      ],
+      "pose": "front closeup, head tilt",
+      "setting": "indoors",
+      "props": "",
+      "age": "puppy"
+    },
+    {
+      "file": "murphy-10-big-puppy-eyes.jpg",
+      "caption": "Wait... did I get it wrong?",
+      "tags": [
+        "hopeful",
+        "indoors",
+        "puppy",
+        "sad",
+        "worried"
+      ],
+      "mood": [
+        "sad",
+        "worried",
+        "hopeful"
+      ],
+      "pose": "front closeup, big eyes",
+      "setting": "indoors",
+      "props": "",
+      "age": "puppy"
+    },
+    {
+      "file": "murphy-11-worried-puppy.jpg",
+      "caption": "Uh oh.",
+      "tags": [
+        "confused",
+        "outdoors",
+        "puppy",
+        "sad",
+        "worried"
+      ],
+      "mood": [
+        "worried",
+        "confused",
+        "sad"
+      ],
+      "pose": "front closeup, squinting",
+      "setting": "outdoors",
+      "props": "",
+      "age": "puppy"
+    },
+    {
+      "file": "murphy-12-puppy-with-pink-leash.jpg",
+      "caption": "Walk time? Walk time?",
+      "tags": [
+        "curious",
+        "hopeful",
+        "indoors",
+        "pink leash",
+        "puppy",
+        "sweet"
+      ],
+      "mood": [
+        "curious",
+        "hopeful",
+        "sweet"
+      ],
+      "pose": "standing, looking at camera",
+      "setting": "indoors",
+      "props": "pink leash",
+      "age": "puppy"
+    },
+    {
+      "file": "murphy-13-floor-sit.jpg",
+      "caption": "I sat. Now where's the treat?",
+      "tags": [
+        "adult",
+        "curious",
+        "hopeful",
+        "indoors",
+        "judgy"
+      ],
+      "mood": [
+        "curious",
+        "judgy",
+        "hopeful"
+      ],
+      "pose": "sitting, head tilt, legs splayed",
+      "setting": "indoors",
+      "props": "",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-14-big-side-eye.jpg",
+      "caption": "I saw that.",
+      "tags": [
+        "adult",
+        "grumpy",
+        "indoors",
+        "judgy",
+        "silly"
+      ],
+      "mood": [
+        "judgy",
+        "grumpy",
+        "silly"
+      ],
+      "pose": "extreme closeup, side eye",
+      "setting": "indoors",
+      "props": "",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-15-muddy-paws.jpg",
+      "caption": "What? The puddle was there first.",
+      "tags": [
+        "adult",
+        "curious",
+        "harness",
+        "indoors",
+        "silly",
+        "sweet"
+      ],
+      "mood": [
+        "curious",
+        "silly",
+        "sweet"
+      ],
+      "pose": "standing on leash, looking back",
+      "setting": "indoors",
+      "props": "harness, leash, muddy paws",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-16-big-smile.jpg",
+      "caption": "Correct! I'm smiling about it.",
+      "tags": [
+        "adult",
+        "excited",
+        "happy",
+        "indoors",
+        "proud"
+      ],
+      "mood": [
+        "happy",
+        "excited",
+        "proud"
+      ],
+      "pose": "looking up, big smile",
+      "setting": "indoors",
+      "props": "",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-17-looking-up.jpg",
+      "caption": "Hi. Hi. Hi. Hi.",
+      "tags": [
+        "adult",
+        "excited",
+        "happy",
+        "indoors",
+        "silly"
+      ],
+      "mood": [
+        "happy",
+        "silly",
+        "excited"
+      ],
+      "pose": "looking up, head tilt, smiling",
+      "setting": "indoors",
+      "props": "",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-18-stick-time.jpg",
+      "caption": "This stick is mine. Fight me.",
+      "tags": [
+        "adult",
+        "excited",
+        "grass",
+        "happy",
+        "silly",
+        "stick"
+      ],
+      "mood": [
+        "happy",
+        "excited",
+        "silly"
+      ],
+      "pose": "playing, holding stick",
+      "setting": "grass",
+      "props": "stick, harness, leash",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-19-pink-plushie-nap.jpg",
+      "caption": "Five more minutes of studying.",
+      "tags": [
+        "adult",
+        "cozy",
+        "indoors",
+        "pink plush toy",
+        "sleepy",
+        "sweet"
+      ],
+      "mood": [
+        "sleepy",
+        "cozy",
+        "sweet"
+      ],
+      "pose": "lying down, chin on toy",
+      "setting": "indoors",
+      "props": "pink plush toy, blanket",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-20-in-the-carrier.jpg",
+      "caption": "Road trip? Road trip!",
+      "tags": [
+        "adult",
+        "happy",
+        "hopeful",
+        "indoors",
+        "pet carrier",
+        "silly"
+      ],
+      "mood": [
+        "happy",
+        "silly",
+        "hopeful"
+      ],
+      "pose": "peeking out, tongue out",
+      "setting": "indoors",
+      "props": "pet carrier",
+      "age": "adult"
+    }
+  ]
+}
