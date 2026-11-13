@@ -34,7 +34,8 @@
       "pose": "front closeup, underbite showing",
       "setting": "indoors",
       "props": "cardboard box",
-      "age": "adult"
+      "age": "adult",
+      "cutout": "murphy-00-underbite-cutout.webp"
     },
     {
       "file": "murphy-01-rainbow-bone.jpg",
@@ -55,7 +56,8 @@
       "pose": "holding toy in mouth",
       "setting": "indoors",
       "props": "rainbow bone toy",
-      "age": "adult"
+      "age": "adult",
+      "cutout": "murphy-01-rainbow-bone-cutout.webp"
     },
     {
       "file": "murphy-02-paws-up.jpg",
@@ -258,7 +260,8 @@
       "pose": "sitting, head tilt, legs splayed",
       "setting": "indoors",
       "props": "",
-      "age": "adult"
+      "age": "adult",
+      "cutout": "murphy-13-floor-sit-cutout.webp"
     },
     {
       "file": "murphy-14-big-side-eye.jpg",
