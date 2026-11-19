@@ -406,6 +406,71 @@
       "setting": "indoors",
       "props": "pet carrier",
       "age": "adult"
+    },
+    {
+      "file": "murphy-21-cozy-lap.jpg",
+      "caption": "Reading over your shoulder.",
+      "tags": [
+        "adult",
+        "cozy",
+        "curious",
+        "harness",
+        "hopeful",
+        "indoors",
+        "sweet"
+      ],
+      "mood": [
+        "cozy",
+        "curious",
+        "sweet",
+        "hopeful"
+      ],
+      "pose": "resting on a lap, looking at camera",
+      "setting": "indoors",
+      "props": "harness",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-22-held-up.jpg",
+      "caption": "Please put me down. Or don't.",
+      "tags": [
+        "adult",
+        "curious",
+        "held",
+        "indoors",
+        "judgy",
+        "sweet"
+      ],
+      "mood": [
+        "curious",
+        "judgy",
+        "sweet"
+      ],
+      "pose": "being held up, paws dangling",
+      "setting": "indoors",
+      "props": "",
+      "age": "adult"
+    },
+    {
+      "file": "murphy-23-cuddle.jpg",
+      "caption": "Hugs are mandatory.",
+      "tags": [
+        "adult",
+        "cozy",
+        "held",
+        "indoors",
+        "sleepy",
+        "sweet"
+      ],
+      "mood": [
+        "cozy",
+        "sleepy",
+        "sweet"
+      ],
+      "pose": "cuddled on a shoulder",
+      "setting": "indoors",
+      "props": "",
+      "age": "adult"
     }
   ]
 }
